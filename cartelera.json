@@ -1,0 +1,51 @@
+[
+    {
+      "titulo": "Kaiju No. 8: Misión de reconocimiento",
+      "protagonistas": ["Masaya Fukunishi", "Wataru Kato", "Asami Seto"],
+      "fecha_estreno": "2025-05-09",
+      "genero": ["Acción", "Aventura", "Animación", "Ciencia ficción"],
+      "duracion": "110 minutos",
+      "imagen": "https://www.compraentradas.com/Carteles/kaiju_no_8_mision_de_reconocimiento_2025.jpg"
+    },
+    {
+      "titulo": "Sinners",
+      "protagonistas": ["Michael B. Jordan", "Hailee Steinfeld", "Miles Caton", "Jack O'Connell", "Wunmi Mosaku", "Jayme Lawson", "Omar Miller", "Delroy Lindo"],
+      "fecha_estreno": "2025-04-18",
+      "genero": ["Terror", "Drama histórico", "Gótico sureño"],
+      "duracion": "138 minutos",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+      "titulo": "The Amateur",
+      "protagonistas": ["Rami Malek", "Rachel Brosnahan", "Caitríona Balfe", "Michael Stuhlbarg", "Laurence Fishburne"],
+      "fecha_estreno": "2025-04-11",
+      "genero": ["Thriller de espionaje", "Acción"],
+      "duracion": "124 minutos",
+      "imagen": "https://hips.hearstapps.com/hmg-prod/images/amateur-1sht-digital-srgb-teaser-v8-67f8d14ce0e80.jpg?resize=980:*"
+    },
+    {
+      "titulo": "Thunderbolts*",
+      "protagonistas": ["Florence Pugh", "Sebastian Stan", "David Harbour", "Wyatt Russell", "Hannah John-Kamen", "Olga Kurylenko", "Julia Louis-Dreyfus"],
+      "fecha_estreno": "2025-04-30",
+      "genero": ["Acción", "Fantasía", "Superhéroes"],
+      "duracion": "N/D",
+      "imagen": "https://hips.hearstapps.com/hmg-prod/images/thunderbolts-poster-681209bdeb5a1.jpg?resize=980:*"
+    },
+    {
+      "titulo": "Lilo y Stitch",
+      "protagonistas": ["Maia Kealoha", "Sydney Agudong", "Billy Magnussen", "Tia Carrere", "Hannah Waddingham", "Chris Sanders", "Courtney B. Vance", "Zach Galifianakis"],
+      "fecha_estreno": "2025-05-23",
+      "genero": ["Aventura", "Comedia", "Familiar", "Ciencia ficción"],
+      "duracion": "159 minutos",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BYzIzZDg5YmItZTM5Zi00OWMyLWFiNzAtNTljYjcxYTZjYzliXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "titulo": "Until Dawn",
+      "protagonistas": ["Ella Rubin", "Michael Cimino", "Odessa A’zion"],
+      "fecha_estreno": "2025-04-25",
+      "genero": ["Terror", "Suspense", "Ciencia ficción"],
+      "duracion": "N/D",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BZWU4NDY0ODktOGI3OC00NWE1LWIwYmQtNmJiZWU3NmZlMDhkXkEyXkFqcGc@._V1_.jpg"
+    }
+  ]
+  
