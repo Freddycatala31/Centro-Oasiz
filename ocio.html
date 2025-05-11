@@ -1,46 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ocio</title>
+    <!-- Enlaces -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Julius+Sans+One&family=Nanum+Myeongjo&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-    <nav>
-        <a href="index.html">main</a>
-        <a href="tiendas.html">tiendas</a>
-        <a href="ocio.html">ocio</a>
-        <a href="restaurantes.html">restaurantes</a>
-        <a href="cine.html">cine</a>
-        <a href="visitanos.html">visitanos</a>
-        <a href="contacto.html">contacto</a>
-        <a href="aviso_legal.html">aviso legal</a>
-    </nav>
-    <img src="img/vr.png" alt="">
-    <p>Especialidad: Experiencias de realidad virtual combinadas con airsoft
-        Concepto: Fusión única entre la emoción del airsoft y la inmersión total de la realidad virtual.
-        Qué ofrecen: Combates tácticos en escenarios virtuales, juegos de equipo, misiones especiales y simulaciones de combate realistas.
-        Ambiente: Dinámico, inmersivo y lleno de adrenalina.
-        Curiosidad: Permite a los jugadores experimentar batallas en entornos imposibles en la vida real, como estaciones espaciales, ciudades apocalípticas o bases secretas.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/NFJEqBVyXIc?si=uIKnCGzORk_ev-ZC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <a href="https://vrairsoftrevolution.com/">a</a>
+    <div class="container text-center py-4">
+        <nav class="mb-4">
+            <a href="index.html" class="mx-2"><span class="material-symbols-outlined">
+                    home
+                </span></a>
+            |
+            <a href="tiendas.html" class="mx-2">tiendas</a>
+            <a href="ocio.html" class="mx-2">ocio</a>
+            <a href="restaurantes.html" class="mx-2">restaurantes</a>
+            <a href="cine.html" class="mx-2">cine</a>
+            |
+            <a href="visitanos.html" class="mx-2">visitanos</a>
+            <a href="contacto.html" class="mx-2">contacto</a>
+            <a href="aviso_legal.html" class="mx-2">aviso legal</a>
+        </nav>
+        <header>
+            <h1>Ocio</h1>
+        </header>
+        <!-- VR AIRSOFT -->
+        <section class="mb-5">
+            <img src="img/vr.png" alt="VR Airsoft" class="img-fluid my-4" width="600px" />
+            <p><strong>Especialidad:</strong> Experiencias de realidad virtual combinadas con airsoft.</p>
+            <p><strong>Concepto:</strong> Fusión entre la emoción del airsoft y la inmersión de la realidad virtual.</p>
+            <p><strong>Qué ofrecen:</strong> Combates tácticos virtuales, juegos de equipo, misiones y simulaciones
+                realistas.</p>
+            <p><strong>Ambiente:</strong> Dinámico, inmersivo y lleno de adrenalina.</p>
+            <p><strong>Curiosidad:</strong> Batallas en entornos imposibles como estaciones espaciales o ciudades
+                apocalípticas.</p>
+            <div class="mb-3 py-5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NFJEqBVyXIc?si=uIKnCGzORk_ev-ZC"
+                    title="YouTube video" frameborder="0" allowfullscreen class="mx-auto d-block"></iframe>
+            </div>
+            <a href="https://vrairsoftrevolution.com/" class="btn btn-primary" target="_blank">Sitio Web</a>
+        </section>
 
-    <img src="img/homerun.png" alt="">
-    <p>Especialidad: Entretenimiento basado en el béisbol
-        Concepto: Simuladores de bateo de alta tecnología, competiciones y actividades deportivas para todas las edades.
-        Qué ofrecen: Cabinas de bateo automático, retos de precisión, rankings en vivo, área de bar y ocio.
-        Ambiente: Deportivo, familiar y muy divertido.
-        Curiosidad: Ideal para quienes quieren sentirse como un jugador profesional, ¡sin necesidad de experiencia previa!</p>
-    
-        <a href="https://homerunshow.com/">a</a>
+        <!-- HOMERUN -->
+        <section class="mb-5">
+            <img src="img/homerun.png" alt="Homerun Show" class="img-fluid my-4" width="600px" />
+            <p><strong>Especialidad:</strong> Entretenimiento basado en el béisbol.</p>
+            <p><strong>Concepto:</strong> Simuladores de bateo de alta tecnología y actividades deportivas para todas
+                las edades.</p>
+            <p><strong>Qué ofrecen:</strong> Cabinas de bateo, retos, rankings en vivo, bar y ocio.</p>
+            <p><strong>Ambiente:</strong> Deportivo, familiar y divertido.</p>
+            <p><strong>Curiosidad:</strong> Te sentirás como un profesional ¡sin experiencia previa!</p>
+            <div class="py-5">
+                <a href="https://homerunshow.com/" class="btn btn-primary" target="_blank">Sitio Web</a>
+            </div>
 
-    <img src="img/speed.png" alt="">
-    <p>Especialidad: Karting indoor, simuladores de carreras y ocio familiar
-        Concepto: Espacio de entretenimiento multifuncional para amantes de la velocidad y la adrenalina.
-        Qué ofrecen: Circuitos de karting eléctricos para adultos y niños, simuladores de F1, bolera, zona arcade, restauración y eventos.
-        Ambiente: Competitivo, familiar y lleno de energía.
-        Curiosidad: Sus karts eléctricos son ecológicos, rápidos y permiten competir de manera segura y limpia, ¡ideal para todo tipo de eventos!</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/m8fcuHnm3L8?si=V2_s7kGP_jZp0JC1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <a href="https://www.speedpark.es/">a</a>
+        </section>
+
+        <!-- SPEEDPARK -->
+        <section class="mb-5">
+            <img src="img/speed.png" alt="SpeedPark" class="img-fluid my-4" width="500px" />
+            <p><strong>Especialidad:</strong> Karting indoor, simuladores de carreras y ocio familiar.</p>
+            <p><strong>Concepto:</strong> Entretenimiento multifuncional para amantes de la velocidad.</p>
+            <p><strong>Qué ofrecen:</strong> Karting eléctrico, simuladores de F1, bolera, arcade y restauración.</p>
+            <p><strong>Ambiente:</strong> Competitivo, familiar y lleno de energía.</p>
+            <p><strong>Curiosidad:</strong> Karts ecológicos, seguros y rápidos. ¡Perfectos para eventos!</p>
+            <div class="mb-3 py-5 ">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m8fcuHnm3L8?si=V2_s7kGP_jZp0JC1"
+                    title="YouTube video" frameborder="0" allowfullscreen class="mx-auto d-block"></iframe>
+            </div>
+            <a href="https://www.speedpark.es/" class="btn btn-primary" target="_blank">Sitio Web</a>
+        </section>
+        <footer>
+            <section class="container">
+                <article class="row">
+                    <div class="col">
+                        <img id="logofooter" src="img/logo-oasiz-white.png" alt="" width="100px">
+                        <br>
+                        <a href="aviso_legal.html">Privacidad</a>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="https://www.instagram.com/oasizmadrid/"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://www.facebook.com/Oasiz.madriz"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://www.linkedin.com/company/oasizmadrid"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </footer>
+    </div>
 </body>
+
 </html>
