@@ -81,6 +81,9 @@ header{
     padding: 0;
 }
 /* Index - info */
+.carousel{
+    min-width: 20vw;
+}
 .info-main .card{
     --bs-card-bg: var(--verde_lago);
     --bs-card-border-color: var(--verde_lago);
@@ -95,11 +98,28 @@ header{
     font-size: 1.6rem;
 }
 video{
-    width: 60%;
+    min-width: 60vw;
+    width: 60vw;
     aspect-ratio: 16/9;
     border-radius: 10px;
-    
 }
+
+
+/* RESTAURANTES */
+.btn-primary {
+    --bs-btn-bg: var(--verde_oscuro) !important;
+    --bs-btn-border-color: var(--verde_oscuro) !important;
+}
+/* Ocio */
+#ocio-main{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* FOOTER */
 footer{
@@ -122,7 +142,8 @@ footer .col {
     height: 100%;
 }
 #logofooter{
-    width: 550px;
+    /* width: 550px; */
+    width: 30vw;
 }
 footer a{
     color: #e6e8fa;
@@ -140,6 +161,7 @@ footer a i{
     width: 800px;
 } */
 .carousel img {
+    
     width: 100%;
     aspect-ratio: 10/8;
     object-fit: cover;
@@ -149,7 +171,7 @@ footer a i{
 
 .logos{
     /* width:  200px; */
-    height: 200px;
+    height: 22vh;
     width: auto;
     margin: 30px;
 }
@@ -161,16 +183,21 @@ nav{
     font-variation-settings:
     "wdth" 100;
 }
-h1,h2{
+h1,h2,h4,h5{
     font-family: "Julius Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-p{
-    font-size: 1.3rem;
+p,li{
     font-family: "Nanum Myeongjo", serif;
   font-weight: 400;
   font-style: normal;
+}
+p{
+    font-size: 1.3rem;
+}
+li{
+    font-size: 1rem;
 }
 ul{
     list-style-position: inside;

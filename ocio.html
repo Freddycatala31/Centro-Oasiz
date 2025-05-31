@@ -25,7 +25,7 @@
 <body>
     <div class=" text-center">
                 <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg mx-5 fixed-top">
+        <nav class="navbar navbar-expand-lg mx-5 fixed-top mt-4">
             <div class="container-fluid">
                 <a class="navbar-brand nav-box" href="index.html">
                     <span class="material-symbols-outlined p-2 px-3">home</span>
@@ -67,10 +67,13 @@
         </nav>
         <!-- fin navbar -->
         <header>
-            <h1>Ocio</h1>
+            <div>
+                <img class="z-0 w-100" src="img/ocio-banner.png" alt="">
+            </div>
+            <h1 class="mt-5">Ocio</h1>
         </header>
         
-        <article class="container">
+        <article class="container" id="ocio-main">
             <section class="row row-cols-lg-3 row-cols-sm-1">
                 <div class="col">
                     <img src="img/vr.png" alt="VR Airsoft" class="img-fluid my-4" width="600px" data-bs-toggle="modal" data-bs-target="#vr"/>
@@ -125,8 +128,12 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="img/homerun.png" alt="Homerun Show" class="img-fluid my-4" width="600px" />
-                            
+                            <!-- <img src="img/homerun.png" alt="Homerun Show" class="img-fluid my-4" width="600px" /> -->
+                            <div class="mb-3 py-5 ">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IuKnF4Y55gU?si=cszOZFAyhjvglOXc" title="YouTube video player" frameborder="0" allowfullscreen class="mx-auto d-block"></iframe>
+                            </div>
+                            <h5 class="text-center mb-3">Descubre las mejores experiencias de béisbol en Madrid</h5>
+                            <p>Lo que te espera en Homerun Show:</p>
                             <p><strong>Especialidad:</strong> Entretenimiento basado en el béisbol.</p>
                             <p><strong>Concepto:</strong> Simuladores de bateo de alta tecnología y actividades deportivas para
                                 todas
