@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>restaurantes</title>
     <!-- Enlaces -->
+     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
     <link rel="stylesheet"
@@ -22,128 +24,196 @@
 </head>
 
 <body>
-    <div class="container text-center py-4">
-        <nav class="mb-4">
-            <a href="index.html" class="mx-2"><span class="material-symbols-outlined">
-                    home
-                </span></a>
-            |
-            <a href="tiendas.html" class="mx-2">tiendas</a>
-            <a href="ocio.html" class="mx-2">ocio</a>
-            <a href="restaurantes.html" class="mx-2">restaurantes</a>
-            <a href="cine.html" class="mx-2">cine</a>
-            |
-            <a href="visitanos.html" class="mx-2">visitanos</a>
-            <a href="contacto.html" class="mx-2">contacto</a>
-            <a href="aviso_legal.html" class="mx-2">aviso legal</a>
+    <div class="text-center">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg mx-5 fixed-top mt-4">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-box" href="index.html">
+                    <span class="material-symbols-outlined p-2 px-3">home</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-box active">
+                        <li class="nav-item dropdown mx-auto ">
+                            <a class="nav-link dropdown-toggle px-4 " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mapa
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tiendas.html"><i class="bi bi-shop"></i> Tiendas</a></li>
+                                <li><a class="dropdown-item" href="ocio.html">ocio</a></li>
+                                <li><a class="dropdown-item active" href="restaurantes.html">restaurantes</a></li>
+                                <li><a class="dropdown-item" href="cine.html">cine</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="navbar-nav nav-box d-flex justify-content-center align-items-center ">
+                        <ul class="navbar-nav flex-row text-center px-4">
+                            <li class="nav-item">
+                                <a href="visitanos.html" class="nav-link">visitanos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link">|   contacto   |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="aviso_legal.html" class="nav-link">aviso legal</a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         </nav>
+        <!-- fin navbar -->
         <header>
-            <h1>Restaurantes</h1>
+            <div>
+                <img class="z-0 w-100" src="img/restaurantes-banner.png" alt="">
+            </div>
+            <h1  class="z-1 mt-5">Restaurantes</h1>
         </header>
-        <article class="container">
+        <article class="container my-5">
             <section class="row">
-                <div class="col"><img class="logos" src="img/tgb.jpg" alt=""></div>
-                <div class="col"><img class="logos" src="img/kfc.png" alt=""></div>
-                <div class="col"><img class="logos" src="img/carls.png" alt=""></div>
-                <div class="col"><img class="logos" src="img/casa_carmen.png" alt=""></div>
-                <div class="col"><img class="logos" src="img/beykebab.png" alt=""></div>
-                <div class="col"><img class="logos" src="img/100_montaditos_logo.png" alt=""></div>
+                <div class="col"><img class="logos" src="img/tgb.png" alt="" data-bs-toggle="modal" data-bs-target="#tgb"></div>
+                <div class="col"><img class="logos" src="img/kfc.png" alt="" data-bs-toggle="modal" data-bs-target="#kfc"></div>
+                <div class="col"><img class="logos" src="img/carls.png" alt="" data-bs-toggle="modal" data-bs-target="#carls"></div>
+                <div class="col"><img class="logos" src="img/casa_carmen.png" alt="" data-bs-toggle="modal" data-bs-target="#casa_carmen"></div>
+                <div class="col"><img class="logos" src="img/beykebab.png" alt="" data-bs-toggle="modal" data-bs-target="#beykebab"></div>
+                <div class="col"><img class="logos rounded-5" src="img/100_montaditos_logo.png" alt="" data-bs-toggle="modal" data-bs-target="#montaditos"></div>
             </section>
         </article>
-        <br><br>
-        <hr>
-        <!-- MODEMS TETO + IMGS -->
-        <div class="mb-3 py-3">
-            <!-- TGB -->
-            <section class="mb-3">
-                <img src="img/tgb.jpg" alt="TGB" class="img-fluid my-5" width="400px" />
-                <p><strong>Especialidad:</strong> Hamburguesas gourmet estilo americano</p>
-                <p><strong>Origen:</strong> España (2013)</p>
-                <p><strong>Ambiente:</strong> Urbano, moderno, juvenil</p>
-                <p><strong>Qué ofrecen:</strong> Hamburguesas, opciones vegetales, patatas, batidos, hot dogs.</p>
-                <p><strong>Curiosidad:</strong> Imagen industrial y desenfadada, ideal para amantes del street food.</p>
-                <div class="mb-3 py-3">
-                    <img src="img/tgbimg.png" alt="TGB interior" class="img-fluid my-3" width="700" />
+        <article>
+            <div class="modal" id="tgb">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">TGB</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/tgbimg.png" alt="TGB" class="img-fluid mb-4" width="400px" />
+                            <p><strong>Especialidad:</strong> Hamburguesas gourmet estilo americano</p>
+                            <p><strong>Origen:</strong> España (2013)</p>
+                            <p><strong>Ambiente:</strong> Urbano, moderno, juvenil</p>
+                            <p><strong>Qué ofrecen:</strong> Hamburguesas, opciones vegetales, patatas, batidos, hot dogs.</p>
+                            <p><strong>Curiosidad:</strong> Imagen industrial y desenfadada, ideal para amantes del street food.</p>
+                           
+                            <a href="https://thegoodburger.com/es" class="btn btn-primary mt-4" target="_blank">Visitar sitio</a> 
+                        </div>
+                    </div>
                 </div>
-                <a href="https://thegoodburger.com/es" class="btn btn-primary" target="_blank">Visitar sitio</a>
-            </section>
+            </div>
+            <div class="modal" id="kfc">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">KFC</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/kfcimg.png"  class="img-fluid mb-4" width="300px" />
+                            <p><strong>Especialidad:</strong> Pollo frito crujiente</p>
+                            <p><strong>Origen:</strong> Estados Unidos (1930)</p>
+                            <p><strong>Ambiente:</strong> Familiar y casual</p>
+                            <p><strong>Qué ofrecen:</strong> Pollo tradicional, wraps, acompañamientos.</p>
+                            <p><strong>Curiosidad:</strong> Receta secreta con 11 hierbas y especias, presente en más de 25,000
+                                locales.
+                            </p>
+                            <a href="https://www.kfc.es/" class="btn btn-primary mt-4" target="_blank">Visitar sitio</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="carls">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Carl's Jr</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/CARLS-JR.png" alt="Carl's Jr logo" class="img-fluid mb-4" width="300px" />
+                            <p><strong>Especialidad:</strong> Hamburguesas grandes y sabrosas</p>
+                            <p><strong>Origen:</strong> Estados Unidos (1941)</p>
+                            <p><strong>Ambiente:</strong> Aventurero, juvenil y atrevido</p>
+                            <p><strong>Qué ofrecen:</strong> Hamburguesas Angus, batidos, papas.</p>
+                            <p><strong>Curiosidad:</strong> Enfoque "fast food premium" con sabores potentes.</p>
+                            <a href="https://carlsjr.es/" class="btn btn-primary mt-4" target="_blank">Visitar sitio</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="casa_carmen">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Casa Carmen</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/cscarmenimg.png" alt="Casa Carmen logo" class="img-fluid mb-4" width="300px" />
+                            <p><strong>Especialidad:</strong> Cocina española y mediterránea</p>
+                            <p><strong>Origen:</strong> España (2013)</p>
+                            <p><strong>Ambiente:</strong> Elegante y acogedor</p>
+                            <p><strong>Qué ofrecen:</strong> Croquetas, arroces, carnes y postres artesanales.</p>
+                            <p><strong>Curiosidad:</strong> Ideal para comidas familiares o reuniones de negocios.</p>
+                            <a href="https://casacarmenrestaurant.com/" class="btn btn-primary mt-4" target="_blank">Visitar sitio</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="beykebab">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">BeyKebap</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/beykebabimg.png" alt="Bey Kebap logo" class="img-fluid mb-4" width="300px" />
+                            <p><strong>Especialidad:</strong> Kebabs modernos y dürüms</p>
+                            <p><strong>Origen:</strong> España (2008)</p>
+                            <p><strong>Ambiente:</strong> Urbano y contemporáneo</p>
+                            <p><strong>Qué ofrecen:</strong> Kebabs, dürüms, bowls saludables y carne a la brasa.</p>
+                            <p><strong>Curiosidad:</strong> Fusión de sabor tradicional turco con presentación mediterránea.</p>
+                            <a href="https://www.beykebap.es/" class="btn btn-primary mt-4" target="_blank">Visitar sitio</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="montaditos">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">100 Montaditos</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/100montaditos.png" class="img-fluid mb-4" width="300px" />
+                            <p><strong>Especialidad:</strong> Tapas y bocadillos pequeños</p>
+                            <p><strong>Origen:</strong> España (2000)</p>
+                            <p><strong>Ambiente:</strong> Informal, popular y divertido</p>
+                            <p><strong>Qué ofrecen:</strong> Más de 100 montaditos, cerveza fría, tinto de verano.</p>
+                            <p><strong>Curiosidad:</strong> Famosas promociones de "todo a 1€" los miércoles y domingos.</p>
+                            <a href="https://spain.100montaditos.com/es/" class="btn btn-primary mt-4" target="_blank">Visitar sitio</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <!-- KFC -->
-            <section class="mb-3">
-                <img src="img/kfc.png" alt="KFC logo" class="img-fluid my-5" width="300px" />
-                <p><strong>Especialidad:</strong> Pollo frito crujiente</p>
-                <p><strong>Origen:</strong> Estados Unidos (1930)</p>
-                <p><strong>Ambiente:</strong> Familiar y casual</p>
-                <p><strong>Qué ofrecen:</strong> Pollo tradicional, wraps, acompañamientos.</p>
-                <p><strong>Curiosidad:</strong> Receta secreta con 11 hierbas y especias, presente en más de 25,000
-                    locales.
-                </p>
-                <div class="mb-3 py-3">
-                    <img src="img/kfcimg.png" alt="KFC interior" class="img-fluid my-3" width="700" />
-                </div>
-                <a href="https://www.kfc.es/" class="btn btn-primary" target="_blank">Visitar sitio</a>
-            </section>
 
-            <!-- Carl's Jr -->
-            <section class="mb-3">
-                <img src="img/carls.png" alt="Carl's Jr logo" class="img-fluid my-5" width="300px" />
-                <p><strong>Especialidad:</strong> Hamburguesas grandes y sabrosas</p>
-                <p><strong>Origen:</strong> Estados Unidos (1941)</p>
-                <p><strong>Ambiente:</strong> Aventurero, juvenil y atrevido</p>
-                <p><strong>Qué ofrecen:</strong> Hamburguesas Angus, batidos, papas.</p>
-                <p><strong>Curiosidad:</strong> Enfoque "fast food premium" con sabores potentes.</p>
-                <div class="mb-3 py-3">
-                    <img src="img/CARLS-JR.png" alt="Carl's Jr interior" class="img-fluid my-3" width="700" />
-                </div>
-                <a href="https://carlsjr.es/" class="btn btn-primary" target="_blank">Visitar sitio</a>
-            </section>
-
-            <!-- Casa Carmen -->
-            <section class="mb-3">
-                <img src="img/casa_carmen.png" alt="Casa Carmen logo" class="img-fluid my-5" width="300px" />
-                <p><strong>Especialidad:</strong> Cocina española y mediterránea</p>
-                <p><strong>Origen:</strong> España (2013)</p>
-                <p><strong>Ambiente:</strong> Elegante y acogedor</p>
-                <p><strong>Qué ofrecen:</strong> Croquetas, arroces, carnes y postres artesanales.</p>
-                <p><strong>Curiosidad:</strong> Ideal para comidas familiares o reuniones de negocios.</p>
-                <div class="mb-3 py-3">
-                    <img src="img/cscarmenimg.png" alt="Casa Carmen interior" class="img-fluid my-3" width="700" />
-                </div>
-                <a href="https://casacarmenrestaurant.com/" class="btn btn-primary" target="_blank">Visitar sitio</a>
-            </section>
-
-            <!-- Bey Kebap -->
-            <section class="mb-3">
-                <img src="img/beykebab.png" alt="Bey Kebap logo" class="img-fluid my-5" width="300px" />
-                <p><strong>Especialidad:</strong> Kebabs modernos y dürüms</p>
-                <p><strong>Origen:</strong> España (2008)</p>
-                <p><strong>Ambiente:</strong> Urbano y contemporáneo</p>
-                <p><strong>Qué ofrecen:</strong> Kebabs, dürüms, bowls saludables y carne a la brasa.</p>
-                <p><strong>Curiosidad:</strong> Fusión de sabor tradicional turco con presentación mediterránea.</p>
-                <div class="mb-3 py-3">
-                    <img src="img/beykebabimg.png" alt="Bey Kebap interior" class="img-fluid my-3" width="700" />
-                </div>
-                <a href="https://www.beykebap.es/" class="btn btn-primary" target="_blank">Visitar sitio</a>
-            </section>
-
-            <!-- 100 Montaditos -->
-            <section class="mb-3">
-                <img src="img/100_montaditos_logo.png" alt="100 Montaditos logo" class="img-fluid my-5" width="300px" />
-                <p><strong>Especialidad:</strong> Tapas y bocadillos pequeños</p>
-                <p><strong>Origen:</strong> España (2000)</p>
-                <p><strong>Ambiente:</strong> Informal, popular y divertido</p>
-                <p><strong>Qué ofrecen:</strong> Más de 100 montaditos, cerveza fría, tinto de verano.</p>
-                <p><strong>Curiosidad:</strong> Famosas promociones de "todo a 1€" los miércoles y domingos.</p>
-                <div class="mb-3 py-3">
-                    <img src="img/100montaditos.png" alt="100 Montaditos interior" class="img-fluid my-3" width="700" />
-                </div>
-                <a href="https://spain.100montaditos.com/es/" class="btn btn-primary" target="_blank">Visitar sitio</a>
-            </section>
-        </div>
+        </article>
+        
     </div>
     <footer>
-        <section class="container">
-            <article class="row">
+        <article class="container">
+            <section class="row">
                 <div class="col">
                     <img id="logofooter" src="img/logo-oasiz-white.png" alt="" >
                     <br>
@@ -167,8 +237,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
-        </section>
+            </section>
+        </article>
 
     </footer>
 </body>

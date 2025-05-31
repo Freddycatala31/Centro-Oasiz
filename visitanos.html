@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>visitanos</title>
     <!-- Enlaces -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
     <link rel="stylesheet"
@@ -21,157 +23,227 @@
 </head>
 
 <body>
-    <div class="container text-center py-4">
-        <nav class="mb-4 text-center">
-            <a href="index.html" class="mx-2"><span class="material-symbols-outlined">
-                    home
-                </span></a>
-            |
-            <a href="tiendas.html" class="mx-2">tiendas</a>
-            <a href="ocio.html" class="mx-2">ocio</a>
-            <a href="restaurantes.html" class="mx-2">restaurantes</a>
-            <a href="cine.html" class="mx-2">cine</a>
-            |
-            <a href="visitanos.html" class="mx-2">visitanos</a>
-            <a href="contacto.html" class="mx-2">contacto</a>
-            <a href="aviso_legal.html" class="mx-2">aviso legal</a>
+    <div class="text-center">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg mx-5 fixed-top mt-4">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-box " href="index.html">
+                    <span class="material-symbols-outlined p-2 px-3">home</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-box">
+                        <li class="nav-item dropdown mx-auto">
+                            <a class="nav-link dropdown-toggle px-4" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mapa
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tiendas.html"><i class="bi bi-shop"></i> Tiendas</a>
+                                </li>
+                                <li><a class="dropdown-item" href="ocio.html">ocio</a></li>
+                                <li><a class="dropdown-item" href="restaurantes.html">restaurantes</a></li>
+                                <li><a class="dropdown-item" href="cine.html">cine</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="navbar-nav nav-box d-flex justify-content-center align-items-center ">
+                        <ul class="navbar-nav flex-row text-center px-4">
+                            <li class="nav-item">
+                                <a href="visitanos.html" class="nav-link ">visitanos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link">| contacto |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="aviso_legal.html" class="nav-link">aviso legal</a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         </nav>
+        <!-- fin navbar -->
         <header>
-            <h1>Visítanos</h1>
+            <div>
+                <img class="z-0 w-100" src="img/visitanos-banner.webp" alt="">
+            </div>
+            <h1 class="my-5">Visítanos</h1>
         </header>
-        <section>
-            <article>
-                <h2>Horario</h2>
-                <img src="img/horario.PNG" alt="">
-            </article>
-            <article>
-                <h2>¿Como llegar?</h2>
-                <p>Av. de los Pirineos, 7, 28850 Torrejón de Ardoz, Madrid</p>
-                <h3>Transporte Público</h3>
-                <ul>
-                    <li>Renfe c2 c7</li>
-                    <li>Bus 6, 223, 824, alsa N202 Alma</li>
-                </ul>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.5630204612517!2d-3.4455123654228452!3d40.47112758532825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4237b0ff564e2d%3A0xd574640f57f5a563!2sOasiz%20Madrid!5e1!3m2!1ses!2ses!4v1744017335126!5m2!1ses!2ses"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </article>
-            <article>
-                <h2>Contactanos</h2>
-                <p>Teléfono: 91 669 00 00</p>
-                <p>Email:
-                    <a href="mailto:contact@oasizmadrid.com">contact@oasizmadrid.com</a>
-                </p>
-            </article>
-        </section>
-        <hr>
-        <section>
-            <h2>Plano</h2>
-            <img src="img/plano.jpg" alt="">
-        </section>
+        <article>
+            <section>
+                <div class="container">
+                    <div class="row ">
+                        <div class="col">
+                            <h2 class="my-5 ">Horario</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h3>Tiendas</h3>
+                                    <p>De 10H a 22H de lunes a sábado y de 11h a 21h domingos y festivos</p>
+                                </li>
+                                <li>
+                                    <h3>Restaurantes</h3>
+                                    <p>12H30 -1H00 de domingo a jueves y de 12H30 - 2H30 viernes y sábados</p>
+                                </li>
+                                <li>
+                                    <h3>Cinesa Luxe</h3>
+                                    <p><a href="cine.html">Ver en la página</a></p>
+                                </li>
+                                <li>
+                                    <h3>Supermercado</h3>
+                                    <p>De 10H a 22H</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.5630204612517!2d-3.4455123654228452!3d40.47112758532825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4237b0ff564e2d%3A0xd574640f57f5a563!2sOasiz%20Madrid!5e1!3m2!1ses!2ses!4v1744017335126!5m2!1ses!2ses"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class=" text-start mx-5">
+                                <h3>Transporte Público</h3>
+                                <ul class="list-unstyled ms-5">
+                                    <li>Renfe c2 c7</li>
+                                    <li>Bus 6, 223, 824, alsa N202 Alma</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+    </div>
+
+    <section class="my-5 text-center">
+        <h2>Contactanos</h2>
+        <p>Teléfono: 91 669 00 00</p>
+        <p>Email:
+            <a href="mailto:contact@oasizmadrid.com">contact@oasizmadrid.com</a>
+        </p>
+    </section>
+    </article>
+
     </div>
     <div class="container py-4">
-        <section>
-            <h2>📶 Conectividad</h2>
-            <p>Wi-Fi Gratuito: Disponible en todo el recinto para que puedas mantenerte conectado durante tu visita.​
-            </p>
-        </section>
-        <section>
-            <h2>👶 Servicios para Familias</h2>
-            <ul>
-                <li>
-                    <h3>Zona Infantil</h3>
-                    <p>Espacio dedicado para que los más pequeños disfruten de actividades y juegos.</p>
-                </li>
-                <li>
-                    <h3>Área de Juegos</h3>
-                    <p>Diversión asegurada para niños con instalaciones seguras y entretenidas.</p>
-                </li>
-                <li>
-                    <h3>Calienta Biberones</h3>
-                    <p>Facilidad para padres que necesitan preparar la comida de sus bebés.</p>
-                </li>
-                <li>
-                    <h3>Préstamo de Cochecitos de Bebé</h3>
-                    <p>Servicio disponible para mayor comodidad durante la visita.</p>
-                </li>
-                <li>
-                    <h3>Préstamo de Sillas de Ruedas</h3>
-                    <p>Para personas con movilidad reducida, asegurando accesibilidad en todo el centro.​</p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>🔌 Movilidad Sostenible</h2>
-            <p>Estaciones de Recarga para Vehículos Eléctricos: Oasiz Madrid cuenta con 120 unidades de carga I-ON,
-                capaces de cargar simultáneamente hasta 241 vehículos. La carga es gratuita para todos los visitantes;
-                solo necesitas escanear el código QR en cada unidad para iniciar el proceso. ​
-                Gewiss</p>
-        </section>
-        <section>
-            <h2>🛋️ Zonas de Descanso</h2>
-            <ul>
-                <li>
-                    <h3>Zonas de Descanso</h3>
-                    <p>Espacios cómodos distribuidos por el centro para relajarse entre compras o actividades.</p>
-                </li>
-                <li>
-                    <h3>Sala VIP</h3>
-                    <p>Área exclusiva para clientes que buscan una experiencia más personalizada y tranquila.</p>
-                </li>
-                <li>
-                    <h3>Fuentes</h3>
-                    <p>Disponibles para refrescarse y mantenerse hidratado durante la visita.​</p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>🧳 Otros Servicios</h2>
-            <ul>
-                <li>
-                    <h3>Recepción</h3>
-                    <p>Punto de información para resolver dudas y obtener asistencia.</p>
-                </li>
-                <li>
-                    <h3>Ascensores y Escaleras Mecánicas</h3>
-                    <p>Facilitan el desplazamiento entre las diferentes plantas del centro.</p>
-                </li>
-                <li>
-                    <h3>Pantallas Interactivas</h3>
-                    <p>Para consultar información del centro, tiendas y eventos.</p>
-                </li>
-                <li>
-                    <h3>Cajeros Automáticos</h3>
-                    <p>Disponibles para realizar operaciones bancarias básicas.</p>
-                </li>
-                <li>
-                    <h3>Lockers (Taquillas)</h3>
-                    <p>Servicio de consigna para guardar pertenencias de forma segura.</p>
-                </li>
-                <li>
-                    <h3>Objetos Perdidos</h3>
-                    <p>Oficina para recuperar objetos extraviados durante la visita.</p>
-                </li>
-                <li>
-                    <h3>Préstamo de Paraguas</h3>
-                    <p>Disponible en caso de necesidad durante días lluviosos.</p>
-                </li>
-                <li>
-                    <h3>Paseo Vegetal</h3>
-                    <p>Área ajardinada para disfrutar de un entorno natural dentro del centro.</p>
-                </li>
-                <li>
-                    <h3>Primeros Auxilios</h3>
-                    <p>Servicio disponible para atender emergencias médicas menores.</p>
-                </li>
-            </ul>
-        </section>
+        <article>
+            <section>
+                <h2><span class="material-symbols-outlined">
+                        signal_cellular_alt
+                    </span> Conectividad</h2>
+                <p>Wi-Fi Gratuito: Disponible en todo el recinto para que puedas mantenerte conectado durante tu
+                    visita.​
+                </p>
+            </section>
+            <section>
+                <h2><span class="material-symbols-outlined">
+                        child_care
+                    </span> Servicios para Familias</h2>
+                <ul class="list-unstyled ms-5 my-4">
+                    <li>
+                        <h3>Zona Infantil</h3>
+                        <p>Espacio dedicado para que los más pequeños disfruten de actividades y juegos.</p>
+                    </li>
+                    <li>
+                        <h3>Área de Juegos</h3>
+                        <p>Diversión asegurada para niños con instalaciones seguras y entretenidas.</p>
+                    </li>
+                    <li>
+                        <h3>Calienta Biberones</h3>
+                        <p>Facilidad para padres que necesitan preparar la comida de sus bebés.</p>
+                    </li>
+                    <li>
+                        <h3>Préstamo de Cochecitos de Bebé</h3>
+                        <p>Servicio disponible para mayor comodidad durante la visita.</p>
+                    </li>
+                    <li>
+                        <h3>Préstamo de Sillas de Ruedas</h3>
+                        <p>Para personas con movilidad reducida, asegurando accesibilidad en todo el centro.​</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2><span class="material-symbols-outlined">
+                        power
+                    </span> Movilidad Sostenible</h2>
+                <p>Estaciones de Recarga para Vehículos Eléctricos: Oasiz Madrid cuenta con 120 unidades de carga I-ON,
+                    capaces de cargar simultáneamente hasta 241 vehículos. La carga es gratuita para todos los
+                    visitantes;
+                    solo necesitas escanear el código QR en cada unidad para iniciar el proceso. ​
+                    Gewiss</p>
+            </section>
+            <section>
+                <h2><span class="material-symbols-outlined">
+                        deck
+                    </span> Zonas de Descanso</h2>
+                <ul class="list-unstyled ms-5 my-4">
+                    <li>
+                        <h3>Zonas de Descanso</h3>
+                        <p>Espacios cómodos distribuidos por el centro para relajarse entre compras o actividades.</p>
+                    </li>
+                    <li>
+                        <h3>Sala VIP</h3>
+                        <p>Área exclusiva para clientes que buscan una experiencia más personalizada y tranquila.</p>
+                    </li>
+                    <li>
+                        <h3>Fuentes</h3>
+                        <p>Disponibles para refrescarse y mantenerse hidratado durante la visita.​</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2><span class="material-symbols-outlined">
+                        your_trips
+                    </span> Otros Servicios</h2>
+                <ul class="list-unstyled ms-5 my-4">
+                    <li>
+                        <h3>Recepción</h3>
+                        <p>Punto de información para resolver dudas y obtener asistencia.</p>
+                    </li>
+                    <li>
+                        <h3>Ascensores y Escaleras Mecánicas</h3>
+                        <p>Facilitan el desplazamiento entre las diferentes plantas del centro.</p>
+                    </li>
+                    <li>
+                        <h3>Pantallas Interactivas</h3>
+                        <p>Para consultar información del centro, tiendas y eventos.</p>
+                    </li>
+                    <li>
+                        <h3>Cajeros Automáticos</h3>
+                        <p>Disponibles para realizar operaciones bancarias básicas.</p>
+                    </li>
+                    <li>
+                        <h3>Lockers (Taquillas)</h3>
+                        <p>Servicio de consigna para guardar pertenencias de forma segura.</p>
+                    </li>
+                    <li>
+                        <h3>Objetos Perdidos</h3>
+                        <p>Oficina para recuperar objetos extraviados durante la visita.</p>
+                    </li>
+                    <li>
+                        <h3>Préstamo de Paraguas</h3>
+                        <p>Disponible en caso de necesidad durante días lluviosos.</p>
+                    </li>
+                    <li>
+                        <h3>Paseo Vegetal</h3>
+                        <p>Área ajardinada para disfrutar de un entorno natural dentro del centro.</p>
+                    </li>
+                    <li>
+                        <h3>Primeros Auxilios</h3>
+                        <p>Servicio disponible para atender emergencias médicas menores.</p>
+                    </li>
+                </ul>
+            </section>
+        </article>
+
     </div>
-    
+
     <footer>
-        <section class="container">
-            <article class="row">
+        <article class="container">
+            <section class="row">
                 <div class="col">
                     <img id="logofooter" src="img/logo-oasiz-white.png" alt="" width="100px">
                     <br>
@@ -195,8 +267,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
-        </section>
+            </section>
+        </article>
 
     </footer>
 

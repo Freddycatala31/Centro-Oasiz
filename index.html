@@ -1,100 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centro Comercial Oasiz</title>
     <!-- Enlaces -->
-     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Julius+Sans+One&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Julius+Sans+One&family=Nanum+Myeongjo&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-    
+
 </head>
+
 <body>
-    <div class="container text-center py-4">
-        <nav class="mb-4">
-            <a href="index.html" class="mx-2"><span class="material-symbols-outlined">
-                home
-                </span></a>
-            |
-            <a href="tiendas.html" class="mx-2">tiendas</a>
-            <a href="ocio.html" class="mx-2">ocio</a>
-            <a href="restaurantes.html" class="mx-2">restaurantes</a>
-            <a href="cine.html" class="mx-2">cine</a>
-            |
-            <a href="visitanos.html" class="mx-2">visitanos</a>
-            <a href="contacto.html" class="mx-2">contacto</a>
-            <a href="aviso_legal.html" class="mx-2">aviso legal</a>
+    <div class=" text-center ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg mx-5 fixed-top mt-4">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-box active" href="index.html">
+                    <span class="material-symbols-outlined p-2 px-3">home</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-box">
+                        <li class="nav-item dropdown mx-auto">
+                            <a class="nav-link dropdown-toggle px-4" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mapa
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tiendas.html"><i class="bi bi-shop"></i> Tiendas</a></li>
+                                <li><a class="dropdown-item" href="ocio.html">ocio</a></li>
+                                <li><a class="dropdown-item" href="restaurantes.html">restaurantes</a></li>
+                                <li><a class="dropdown-item" href="cine.html">cine</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="navbar-nav nav-box d-flex justify-content-center align-items-center ">
+                        <ul class="navbar-nav flex-row text-center px-4">
+                            <li class="nav-item">
+                                <a href="visitanos.html" class="nav-link">visitanos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link">|   contacto   |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="aviso_legal.html" class="nav-link">aviso legal</a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         </nav>
-        <header class="mb-5">
-            <h1>El centro comercial OASIZ</h1>
-            <img src="img/logo-oasiz-white.png" alt="" class="img-fluid">
+        <!-- fin navbar -->
+        <header class="mb-5" id="intro-main">
+            <div class="container  d-flex flex-column align-items-center justify-content-center"">
+                <img src=" img/logo-oasiz-white.png" alt="" class="img-fluid ">
+                <h1 class="mt-5">El centro comercial OASIZ</h1>
+            </div>
         </header>
-        
-        <section class="mb-5">
-            <article>
-                <h2 class="text-center py-4">Un espacio unico en madrid donde todo es posible</h2>
+
+        <article class="mb-5 info-main">
+            <section class="card mx-auto py-5 rounded-5 w-75 text-center">
+                <h2 class="text-center py-4 mb-2">Un espacio unico en madrid donde todo es posible</h2>
                 <div class="container">
-                    <div class="row">
+                    <div class="row row-cols-sm-1 row-cols-lg-2">
                         <!-- Carrousel 1 -->
-                        <div class="col">
+                        <!-- <div class="col">
                             <span class="material-symbols-outlined">chevron_left</span>
                             <img src="img/img-1.jpg" alt="">
                             <span class="material-symbols-outlined">chevron_right</span>
+                        </div> -->
+                        <div class="col">
+                            <!-- Carousel -->
+                            <div id="carousel1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3"></button>
+                                </div>
+
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/img-1.jpg" class="d-block w-100 img-thumbnail">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/img-2.jpg" class="d-block w-100 img-thumbnail">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/img-3.jpg" class="d-block w-100 img-thumbnail">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/img-7.jpeg" class="d-block w-100 img-thumbnail">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+
+
                         </div>
-                        <div class="col align-self-center">
-                            <p class="py-2">El centro comercial OASIZ es un lugar donde puedes disfrutar de una experiencia única de compras, entretenimiento y gastronomía. Con una amplia variedad de tiendas, restaurantes y actividades para toda la familia, OASIZ se ha convertido en un destino popular en Madrid.</p>
-                            <p class="py-2">Desde su apertura, OASIZ ha atraído a miles de visitantes cada semana, ofreciendo un ambiente moderno y acogedor. Con una arquitectura impresionante y espacios al aire libre, el centro comercial es un lugar ideal para pasar el día con amigos y familiares.</p>
+
+                        <div class="col align-self-center text-start">
+                            <p class="py-2">El centro comercial OASIZ es un lugar donde puedes disfrutar de una
+                                experiencia única de compras, entretenimiento y gastronomía. Con una amplia variedad de
+                                tiendas, restaurantes y actividades para toda la familia, OASIZ se ha convertido en un
+                                destino popular en Madrid.</p>
+                            <p class="py-2">Desde su apertura, OASIZ ha atraído a miles de visitantes cada semana,
+                                ofreciendo un ambiente moderno y acogedor. Con una arquitectura impresionante y espacios
+                                al aire libre, el centro comercial es un lugar ideal para pasar el día con amigos y
+                                familiares.</p>
                         </div>
                     </div>
                 </div>
-            </article>
-        </section>
-        <hr>
-        <section>
-            <video src="img/Oasiz Madrid.mp4" controls width="600" class="my-3 img-fluid"></video>
-        </section>
-        <hr>
-        <section>
-            <article>
-                <h2>¿Qué ofrece Oasiz?</h2>
+            </section>
+        </article>
+        
+        <article>
+            <video src="img/Oasiz Madrid.mp4" controls poster="img/video-portada.png" class="my-3 img-fluid"></video>
+        </article>
+        
+        <article class="info-main">
+            <section class="card mx-auto py-5 rounded-5 w-75 text-center">
+                <h2 class="mb-3">¿Qué ofrece Oasiz?</h2>
                 <div class="container">
-                    <div class="row">
-                        <div class="col align-self-center">
-                            <p class="py-2">Además de las tiendas y restaurantes, OASIZ también cuenta con una variedad de opciones de entretenimiento, incluyendo cines, boleras y áreas de juegos para niños. Con eventos especiales y promociones frecuentes, siempre hay algo nuevo que descubrir en OASIZ.</p>
-                            <p class="py-2">Ya sea que estés buscando un lugar para hacer compras, disfrutar de una comida deliciosa o simplemente pasar un buen rato, OASIZ es el lugar perfecto para ti. Ven y descubre
+                    <div class="row row-cols-sm-1 row-cols-xs-1 row-cols-lg-2">
+                        <div class="col align-self-center text-start">
+                            <p class="py-2">Además de las tiendas y restaurantes, OASIZ también cuenta con una variedad
+                                de opciones de entretenimiento, incluyendo cines, boleras y áreas de juegos para niños.
+                                Con eventos especiales y promociones frecuentes, siempre hay algo nuevo que descubrir en
+                                OASIZ.</p>
+                            <p class="py-2">Ya sea que estés buscando un lugar para hacer compras, disfrutar de una
+                                comida deliciosa o simplemente pasar un buen rato, OASIZ es el lugar perfecto para ti.
+                                Ven y descubre
                                 todo lo que este increíble centro comercial tiene para ofrecer.</p>
                         </div>
-                        <!-- Carrousel 2 -->
                         <div class="col">
-                            <span class="material-symbols-outlined">chevron_left</span>
-                            <img src="img/img-3.jpg" alt="">
-                            <span class="material-symbols-outlined">chevron_right</span>
+                            <!-- Carousel -->
+                            <div id="carousel2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3"></button>
+                                </div>
+
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/img-4.jpg" class="d-block w-100 img-thumbnail">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/img-5.jpg" class="d-block w-100 img-thumbnail">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/img-6.jpg" class="d-block w-100 img-thumbnail">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/img-8.jpeg" class="d-block w-100 img-thumbnail">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
-            </article>
+            </section>
 
-        </section>
-        <section>
-            <div class="d-flex flex-wrap justify-content-center gap-3">
-                <img src="img/img-1.jpg" class="img-thumbnail" style="max-width: 200px;" />
-                <img src="img/img-2.jpg" class="img-thumbnail" style="max-width: 200px;" />
-                <img src="img/img-3.jpg" class="img-thumbnail" style="max-width: 200px;" />
-                <img src="img/img-4.jpg" class="img-thumbnail" style="max-width: 200px;" />
-                <img src="img/img-5.jpeg" class="img-thumbnail" style="max-width: 200px;" />
-                <img src="img/img-6.jpg" class="img-thumbnail" style="max-width: 200px;" />
-              </div>
-        </section>
+        </article>
+        
         <footer class="mt-5">
-            <section class="container">
-                <article class="row">
+            <article class="container ">
+                <section class="row">
                     <div class="col">
                         <img id="logofooter" src="img/logo-oasiz-white.png" alt="" width="100px">
                         <br>
@@ -104,24 +222,28 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <a href="https://www.instagram.com/oasizmadrid/"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/oasizmadrid/"><i
+                                            class="fa-brands fa-instagram"></i></a>
                                 </div>
                                 <div class="col">
-                                    <a href="https://www.facebook.com/Oasiz.madriz"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://www.facebook.com/Oasiz.madriz"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
                                 </div>
                                 <div class="col">
-                                    <a href="https://www.linkedin.com/company/oasizmadrid"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://www.linkedin.com/company/oasizmadrid"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </article>
-            </section>
+                </section>
+            </article>
 
         </footer>
 
-        
+
 
     </div>
 </body>
+
 </html>
