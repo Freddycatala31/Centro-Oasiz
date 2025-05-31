@@ -118,7 +118,13 @@ video{
     justify-content: center;
     align-items: center;
 }
-
+/* VISITANOS */
+.col iframe{
+    width: 80%;
+    aspect-ratio: 12/9;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
 
 
 /* FOOTER */
