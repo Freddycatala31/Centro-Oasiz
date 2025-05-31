@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cine</title>
     <!-- Enlaces -->
+     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -109,20 +111,48 @@
             <div class="container py-4">
 
             
-            <nav class="mb-4 text-center">
-                <a href="index.html" class="mx-2"><span class="material-symbols-outlined">
-                        home
-                    </span></a>
-                |
-                <a href="tiendas.html" class="mx-2">tiendas</a>
-                <a href="ocio.html" class="mx-2">ocio</a>
-                <a href="restaurantes.html" class="mx-2">restaurantes</a>
-                <a href="cine.html" class="mx-2">cine</a>
-                |
-                <a href="visitanos.html" class="mx-2">visitanos</a>
-                <a href="contacto.html" class="mx-2">contacto</a>
-                <a href="aviso_legal.html" class="mx-2">aviso legal</a>
-            </nav>
+            <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg mx-5 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-box" href="index.html">
+                    <span class="material-symbols-outlined p-2 px-3">home</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-box active">
+                        <li class="nav-item dropdown mx-auto ">
+                            <a class="nav-link dropdown-toggle px-4 " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mapa
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tiendas.html"><i class="bi bi-shop"></i> Tiendas</a></li>
+                                <li><a class="dropdown-item" href="ocio.html">ocio</a></li>
+                                <li><a class="dropdown-item" href="restaurantes.html">restaurantes</a></li>
+                                <li><a class="dropdown-item active" href="cine.html">cine</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="navbar-nav nav-box d-flex justify-content-center align-items-center ">
+                        <ul class="navbar-nav flex-row text-center px-4">
+                            <li class="nav-item">
+                                <a href="visitanos.html" class="nav-link">visitanos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link">|   contacto   |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="aviso_legal.html" class="nav-link">aviso legal</a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <!-- fin navbar -->
             <header>
                 <h1>Cine</h1>
             </header>
@@ -140,8 +170,8 @@
             </section>
             
           <footer>
-            <section class="container">
-                <article class="row">
+            <article class="container">
+                <section class="row">
                     <div class="col">
                         <img id="logofooter" src="img/logo-oasiz-white.png" alt="" width="100px">
                         <br>
@@ -162,8 +192,8 @@
                             </div>
                         </div>
                     </div>
+                  </section>
                 </article>
-            </section>
         </div>
         </footer>
         <script>
