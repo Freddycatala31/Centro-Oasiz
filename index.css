@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
 *{
     
     box-sizing: border-box;
@@ -194,7 +196,7 @@ h1,h2,h4,h5{
     font-weight: 400;
     font-style: normal;
 }
-p,li{
+p,li, #privacidad-enl{
     font-family: "Nanum Myeongjo", serif;
   font-weight: 400;
   font-style: normal;
@@ -211,4 +213,57 @@ ul{
 iframe{
     width: 100%;
     aspect-ratio: 16/9;
+}
+
+.card {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      object-fit:fill;
+      background-color: #eee;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+      color: #222;
+    }
+
+    .card-content p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .genre {
+      font-style: italic;
+      color: #666;
+    }
+
+    #horarios {
+      width: 300px;
+      max-height: 400px;
+    }
+
+.card-img-top {
+  width: 100px;
+  height: 500px;
+  object-fit:fill;
+  display: block;
 }
